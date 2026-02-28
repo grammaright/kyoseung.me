@@ -1,19 +1,24 @@
 body {
     font-family: 'Tinos', 'Noto Sans', "sans-serif";
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 25vh;
+    box-sizing: border-box;
 }
 
 .container {
-    position: relative;
-    width: 1024px;
-    left: 50%;
-    margin-left: -512px;
+    width: 1056px;
+    max-width: 100%;
 }
 
 .profileimage {
     width: 180px;
     height: 180px;
-    float: right;
     display: block;
+    flex-shrink: 0;
 }
 
 .profiletext {
@@ -24,12 +29,17 @@ body {
 .topdiv {
     height: 100%;
     margin-top: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 24px;
 }
 
 .powered {
     width: 100%;
     font-size: 0.8em;
     margin-top: 64px;
+    text-align: left;
 }
 
 .li-withoutstyle {
@@ -37,20 +47,27 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        padding-top: 0;
+    }
+
+    .topdiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .profileimage {
-        position: relative;
-        float: none;
-        left: 50%;
-        margin-left: -90px;
+        margin-top: 24px;
+    }
+
+    .profiletext {
+        text-align: left;
     }
 }
 
 @media screen and (max-width: 1080px) {
     .container {
-        position: absolute;
         width: 96%;
-        left: 0%;
-        margin-left: 0px;
         padding: 0 2% 0 2%;
     }
 
