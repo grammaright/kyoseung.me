@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Tinos:400,400i,700,700i" rel="stylesheet">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSESZH4W2Y"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-GSESZH4W2Y');
+        </script>
+
+        <title>CV - Kyoseung Koo</title>
+        <style>
+            body {
+                font-family: 'Tinos', serif;
+                font-size: 15px;
+                line-height: 1.4;
+                margin: 0;
+                background: #FFFFFF;
+                color: #000000;
+            }
+            a { color: inherit; }
+
+            .nav {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 24px 24px 0;
+                display: flex;
+                gap: 24px;
+                font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+                font-weight: 600;
+            }
+            .nav a, .nav button {
+                color: #222;
+                text-decoration: none;
+                font: inherit;
+                background: none;
+                border: none;
+                padding: 0;
+                cursor: pointer;
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+            }
+            .nav a:hover, .nav button:hover { text-decoration: underline; }
+
+            .cv {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 24px 24px 64px;
+            }
+            .updated {
+                text-align: right;
+                color: gray;
+                font-style: italic;
+                font-size: 0.85em;
+            }
+            header { text-align: center; }
+            header h1 { font-size: 2em; margin: 8px 0 12px; }
+            .contact {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 4px 24px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+                margin: 24px 0 8px;
+                padding-bottom: 2px;
+                border-bottom: 1px solid #000;
+                break-after: avoid;
+            }
+            h2 small { font-size: 0.75em; font-weight: normal; }
+
+            .entry {
+                margin: 0 0.2cm 12px;
+                break-inside: avoid;
+            }
+            .entry p { margin: 0; }
+            .row {
+                display: flex;
+                justify-content: space-between;
+                gap: 16px;
+            }
+            .row > .when {
+                font-style: italic;
+                text-align: right;
+                flex-shrink: 0;
+            }
+            .small { font-size: 0.9em; }
+            .note { font-size: 0.85em; }
+            ul {
+                margin: 4px 0 0;
+                padding-left: 1.2em;
+                list-style-type: circle;
+            }
+            li { margin-bottom: 2px; }
+
+            @page {
+                size: A4;
+                margin: 2cm;
+            }
+            @media print {
+                .nav { display: none; }
+                body { font-size: 10.5pt; }
+                .cv { max-width: none; padding: 0; }
+            }
+            @media screen and (max-width: 600px) {
+                .row { flex-direction: column; gap: 0; }
+                .row > .when { text-align: left; }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="nav">
+            <a href="./">Home</a>
+            <button type="button" onclick="window.print()">
+                Save as PDF
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>
+            </button>
+        </nav>
+
+        <main class="cv">
+            <div class="updated">Last updated in November 2026</div>
+            <header>
+                <h1>Kyoseung Koo</h1>
+                <div class="contact">
+                    <span>Seoul, South Korea</span>
+                    <a href="mailto:kyoseung.koo@finnest.ai">kyoseung.koo@finnest.ai</a>
+                    <a href="https://kyoseung.me/">kyoseung.me</a>
+                    <a href="https://github.com/grammaright" target="_blank">github.com/grammaright</a>
+                </div>
+            </header>
+
+            <section>
+                <h2>Education</h2>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Seoul National University</b></p>
+                            <p><i>Ph.D. in Computer Science and Engineering</i></p>
+                            <p>Supervised by <i><a href="https://bongkimoon.github.io/" target="_blank">Bongki Moon</a></i> (Database Systems Lab)</p>
+                        </div>
+                        <div class="when">Sep 2018 – Feb 2026</div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Ajou University</b></p>
+                            <p><i>B.S. in Electrical Engineering and Software Engineering (Double Major)</i></p>
+                        </div>
+                        <div class="when">Mar 2014 – Feb 2018</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <div class="entry">
+                    <div class="row">
+                        <p><b><a href="https://finnest.ai/" target="_blank">Finnest</a></b></p>
+                        <div class="when">Seoul, South Korea</div>
+                    </div>
+                    <div class="row">
+                        <p><i>Software Engineer</i></p>
+                        <div class="when">Mar 2026 – Present</div>
+                    </div>
+                    <div class="row">
+                        <p><i>Freelance Software Engineer</i></p>
+                        <div class="when">Oct 2023 – Feb 2026</div>
+                    </div>
+                    <ul>
+                        <li>Building AI agents that automate bookkeeping and finance operations.</li>
+                        <li>Designing data pipelines that integrate financial data and analyze commerce data for profitability and settlement reconciliation.</li>
+                        <li>Developing services and cloud infrastructure, including an executive financial dashboard for clients and internal tools for financial operators.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <p><b>Database Systems Lab, Seoul National University</b></p>
+                        <div class="when">Seoul, South Korea</div>
+                    </div>
+                    <div class="row">
+                        <p><i>Graduate Researcher</i></p>
+                        <div class="when">Sep 2018 – Feb 2026</div>
+                    </div>
+                    <ul>
+                        <li>Participated in government-funded projects, from a multi-model database prototype to an atmospheric LiDAR system.</li>
+                        <li>Published research in SIGMOD, PVLDB, and ICDE, including first-author work in SIGMOD.</li>
+                        <li>Served as lab lead, supporting members' research and lab operations.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <p><b>Seoulsoft</b></p>
+                        <div class="when">Seoul, South Korea</div>
+                    </div>
+                    <div class="row">
+                        <p><i>Freelance Software Engineer</i></p>
+                        <div class="when">May 2020 - Aug 2021</div>
+                    </div>
+                    <ul>
+                        <li>Built a Manufacturing Execution System for small factories end-to-end.</li>
+                        <li>Developed an on-site data collector that gathers sensor data from factory equipment and integrates it with the product.</li>
+                        <li>Led the development team to ensure timely delivery and quality of the project.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <p><b>Goya Entertainment</b></p>
+                        <div class="when">Seongnam, South Korea</div>
+                    </div>
+                    <div class="row">
+                        <p><i>Freelance iOS Developer</i></p>
+                        <div class="when">2017</div>
+                    </div>
+                    <ul>
+                        <li>Developed <i>Flux - A Life Book</i>, a diary iOS application.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <p><b>Datasquare</b></p>
+                        <div class="when">Suwon, South Korea</div>
+                    </div>
+                    <div class="row">
+                        <p><i>Software Developer</i></p>
+                        <div class="when">2015 - 2016</div>
+                    </div>
+                    <ul>
+                        <li>Contributed to an Enterprise Resource Planning system for BUMIL Transportation, South Korea, by implementing a bus dispatch interval adjustment algorithm and developing the front-end.</li>
+                        <li>Developed <i>Folder &amp; Note</i> and <i>Five</i> for iOS, and <i>24hours;</i> for Android.</li>
+                        <li>Participated in the development of several web services: <i>Peaceminusone</i>, <i>Naebangeulbutakhae</i>, <i>Cider</i>, and <i>Reshare</i>.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <p><b>MINIVERTISING</b></p>
+                        <div class="when">Seoul, South Korea</div>
+                    </div>
+                    <div class="row">
+                        <p><i>Freelance Front-End Web Developer</i></p>
+                        <div class="when">2014</div>
+                    </div>
+                    <ul>
+                        <li>Contributed to promotional websites: <i>Frostine Stay Foolish</i> and <i>Su:m 37' Skin Birthday</i> by LG Household &amp; Health Care, South Korea, and <i>Teukbyeolhan Deiteu</i> and <i>Kkoccboda Ibul</i> by Evezary, South Korea.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="small">
+                <h2>Publications</h2>
+                <div class="entry">
+                    <p><b>PreVision: An Out-of-Core Matrix Computation System with Optimal Buffer Replacement</b></p>
+                    <p><b><i>Kyoseung Koo</i></b>, Sohyun Kim, Wonhyeon Kim, Yoojin Choi, Juhee Han, Bogyeong Kim, Bongki Moon</p>
+                    <p>Proceedings of the ACM on Management of Data. 2(1): 42:1-42:25</p>
+                </div>
+                <div class="entry">
+                    <p><b>M2Bench: A Database Benchmark for Multi-Model Analytic Workloads</b></p>
+                    <p>Bogyeong Kim, <b><i>Kyoseung Koo</i></b>, Undraa Enkhbat, Sohyun Kim, Juhun Kim, Bongki Moon</p>
+                    <p>Proceedings of the VLDB Endowment. 16(4):747-759.</p>
+                </div>
+                <div class="entry">
+                    <p><b>DenForest: Enabling the Fast Deletion in Incremental Density-Based Clustering over Sliding Windows</b></p>
+                    <p>Bogyeong Kim, <b><i>Kyoseung Koo</i></b>, Undraa Enkhbat, Bongki Moon</p>
+                    <p>Proceedings of the 2022 ACM SIGMOD Conference, June 12–17, 2022, Philadelphia, PA, USA. 296-309.</p>
+                </div>
+                <div class="entry">
+                    <p><b>DISC: Density-Based Incremental Clustering by Striding over Streaming Data</b></p>
+                    <p>Bogyeong Kim, <b><i>Kyoseung Koo</i></b>, Juhun Kim, Bongki Moon</p>
+                    <p>Proceedings of the 37th IEEE ICDE Conference, Apr 19-22, 2021, Chania, Crete, Greece. 828-839</p>
+                </div>
+                <div class="entry">
+                    <p><b>Jovis: A Visualization Tool for PostgreSQL Query Optimizer</b></p>
+                    <p>Yoojin Choi, Juhee Han, <b><i>Kyoseung Koo</i></b>, Bongki Moon</p>
+                    <p>Proceedings of the 37th SSDBM Conference, June 23-25, 2025, Columbus, OH, USA. Article 19, 1-6.</p>
+                </div>
+                <div class="entry">
+                    <p><b>MISE: An Array-Based Integrated System for Atmospheric Scanning LiDAR</b></p>
+                    <p><b><i>Kyoseung Koo*</i></b>, Juhun Kim*, Bongki Moon <span class="note">(Demo, *Both authors contributed equally to this research)</span></p>
+                    <p>Proceedings of the 33rd SSDBM Conference, July 6–7, 2021, Tampa, FL, USA. 265–269.</p>
+                </div>
+                <div class="entry">
+                    <p><b>Dual Storage Engines toward Multi-Model Analytic Workloads</b></p>
+                    <p><b><i>Kyoseung Koo</i></b>, Yoojin Choi, Bogyeong Kim, Bongki Moon</p>
+                    <p>Journal of KIISE. 53(2):158-171.</p>
+                </div>
+                <div class="entry">
+                    <p><b>Measurement-Based Power Optimization Technique for OpenCV on Heterogeneous Multicore Processor</b></p>
+                    <p>Hyeonseok Jung, <b><i>Kyoseung Koo</i></b>, Hoeseok Yang</p>
+                    <p>Symmetry. 11(12):1488.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Patents</h2>
+                <div class="entry">
+                    <p><b>Density-based data clustering apparatus and method</b></p>
+                    <p>Bongki Moon, <b><i>Kyoseung Koo</i></b>, Bogyeong Kim, Undraa Enkhbat</p>
+                    <p>US Patent No. US12339874B2, Published June 24, 2025</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Academic Services</h2>
+                <div class="entry"><p><b>Committee Member</b> in SIGMOD Availability &amp; Reproducibility Initiative (2025 and 2024)</p></div>
+                <div class="entry"><p><b>Reviewer</b> in WWW (2027), Scientific Reports (2026), and The Journal of Supercomputing (2026)</p></div>
+                <div class="entry"><p><b>External Reviewer</b> in ICDE (2024 and 2020), SSDBM (2023, 2022, and 2021), PVLDB Reproducibility (2023), ICDM (2023, 2021, 2020, and 2019), CIKM (2019), and BigData (2021)</p></div>
+            </section>
+
+            <section>
+                <h2>Lecturer &amp; Teaching Assistant</h2>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Large Scale Data Processing (MongoDB)</b></p>
+                            <p><i>Lab lecturer and teaching assistant</i></p>
+                        </div>
+                        <div class="when">Samsung Electronics</div>
+                    </div>
+                    <ul>
+                        <li>Spring 2024, Summer 2023, Spring 2023, Spring 2022, Fall 2021, Spring 2021, Fall 2020, Spring 2020, Fall 2019, Spring 2019, and Fall 2018</li>
+                        <li>The average rating of latest courses is 4.6/5.0</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Database System</b></p>
+                            <p><i>Teaching assistant</i></p>
+                        </div>
+                        <div class="when">Seoul National University</div>
+                    </div>
+                    <ul><li>Spring 2021 and Spring 2020</li></ul>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Discrete Mathematics</b></p>
+                            <p><i>Teaching assistant</i></p>
+                        </div>
+                        <div class="when">Seoul National University</div>
+                    </div>
+                    <ul><li>Spring 2021 and Fall 2020</li></ul>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Data Structures</b></p>
+                            <p><i>Teaching assistant</i></p>
+                        </div>
+                        <div class="when">Seoul National University</div>
+                    </div>
+                    <ul><li>Spring 2020</li></ul>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Big Data Processing (MongoDB)</b></p>
+                            <p><i>Lab lecturer and teaching assistant</i></p>
+                        </div>
+                        <div class="when">Seoul National University</div>
+                    </div>
+                    <ul><li>Fall 2018</li></ul>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Android Application Development with App Inventor</b></p>
+                            <p><i>Lecturer</i></p>
+                        </div>
+                        <div class="when">Sangdo Middle School</div>
+                    </div>
+                    <ul><li>Fall 2015</li></ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Research Projects</h2>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Multi-Model Multi-Storage Engine Database Management System</b></p>
+                            <p><i>Database Systems Lab</i></p>
+                        </div>
+                        <div class="when">2020 - 2026</div>
+                    </div>
+                    <ul>
+                        <li>Designing and developing a query planner and executor for multi-model workloads.</li>
+                        <li>Proposed <i>M2Bench</i>, a benchmark for multi-model database systems and <i>PreVision</i>, an efficient array processing engine.</li>
+                        <li>Conducted in-depth studies on the internals of relational, document, graph, array, and multi-model database systems.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Big Data Big Computing Engine for High-Performance Computer</b></p>
+                            <p><i>Database Systems Lab</i></p>
+                        </div>
+                        <div class="when">2018 - 2021</div>
+                    </div>
+                    <ul>
+                        <li>Enhanced <i>Spangle</i>, a Spark extension for high-performance array processing, by refactoring operations and implementing GPU kernels to optimize performance.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Construction and Demonstration of Fine Particle Monitoring System using Scanning LiDAR</b></p>
+                            <p><i>Database Systems Lab</i></p>
+                        </div>
+                        <div class="when">2019 - 2020</div>
+                    </div>
+                    <ul>
+                        <li>Developed <i>MISE</i>, a SciDB-based data processing and visualization system for atmospheric scanning LiDAR.</li>
+                        <li>Deployed the system for real-time LiDAR monitoring in Busan, Siheung, and Gimje, South Korea</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Efficient Key-Value Store for Blockchain System with Key-Value Solid-State Drive</b></p>
+                            <p><i>Database Systems Lab</i></p>
+                        </div>
+                        <div class="when">2019</div>
+                    </div>
+                    <ul>
+                        <li>Accelerated HyperLedger performance using Samsung Key-Value Solid-State Drives.</li>
+                        <li>Conducted in-depth studies on the data storage layers of HyperLedger and Ethereum.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Honors &amp; Awards</h2>
+                <div class="entry">
+                    <div class="row">
+                        <div><p><b>Lecture and Research Scholarship</b></p></div>
+                        <div class="when">Seoul National University<br>Mar 2020 - Aug 2021</div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Excellence Award in Smart City Contest</b></p>
+                            <p>For <i>Construction of an Array DBMS-Based Data Hub for High-Resolution, Real-Time Fine Dust Monitoring</i>.</p>
+                        </div>
+                        <div class="when">Seoul National University<br>2020</div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Excellence Award in Presentation of Applied Research and Development at Industrial Fair</b></p>
+                            <p>For <i>Measurement-Based Power Optimization Technique for OpenCV</i>.</p>
+                        </div>
+                        <div class="when">Ajou University<br>2017</div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Excellence Award at the 4th Ajou Startup Camp</b></p>
+                            <p>For <i>Wearable Posture Correction Solution</i>.</p>
+                        </div>
+                        <div class="when">Ajou University<br>2015</div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Outstanding Award in Literacy Education Workshop at the 4th Ajou Startup Camp</b></p>
+                            <p>For the proposal of <i>Wearable Posture Correction Device</i>.</p>
+                        </div>
+                        <div class="when">Ajou University<br>2014</div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div>
+                            <p><b>Excellence Award at Society Contest</b></p>
+                            <p>For a monitoring software for heterogeneous multi-core embedded boards.</p>
+                        </div>
+                        <div class="when">Ajou University<br>2014</div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="row">
+                        <div><p><b>Outstanding Award in Freshman Division of Programming Contest</b></p></div>
+                        <div class="when">Ajou University<br>2014</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
